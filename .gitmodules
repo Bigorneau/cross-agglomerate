@@ -1,0 +1,4 @@
+[submodule "tomato-usb/tomato-shibby"]
+	path = tomato-usb/tomato-shibby
+	url = git://repo.or.cz/tomato.git
+	branch = tomato-shibby
