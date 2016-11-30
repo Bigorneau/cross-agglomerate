@@ -1,2 +1,6 @@
 CONFIG="tomato-usb"
+MIPSEL_LINUX="$(readlink -f tomato-shibby/tools/brcm/hndtools-mipsel-linux/bin/)"
+MIPSEL_UCLIBC="$(readlink -f tomato-shibby/tools/brcm/hndtools-mipsel-uclibc/bin/)"
+RELEASE_TOOLS="$(readlink -f tomato-shibby/release/tools/)"
+export PATH="$PATH:$MIPSEL_LINUX:$MIPSEL_UCLIBC:$RELEASE_TOOLS"
 export PS1="$(tput setaf 1)$CONFIG \w$(tput sgr0) % "
